@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+		<groupId>com.refactor</groupId>
+		<artifactId>refactor-payment</artifactId>
+		<version>1.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>refactor-payment-service</artifactId>
+    <name>refactor-payment-service</name>
+	
+	<dependencies>
+		<!-- dependencies sub module -->
+		<!--<dependency>
+			<groupId>com.refactor.mall</groupId>
+			<artifactId>refactor-payment-service</artifactId>
+			<version>1.1-SNAPSHOT</version>
+		</dependency>-->
+		<!-- 依赖的子模块  -->
+		<dependency>
+			<groupId>com.refactor</groupId>
+			<artifactId>refactor-payment-dao</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!-- 调用外部的微服务 -->		
+		<dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+        </dependency>
+	</dependencies>
+</project>

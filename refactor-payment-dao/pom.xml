@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>com.refactor</groupId>
+		<artifactId>refactor-payment</artifactId>
+		<version>1.1-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>refactor-payment-dao</artifactId>
+	<name>refactor-payment-dao</name>
+
+	<dependencies>
+		<!--依赖通用项目 -->
+
+		<!-- 依赖的子模块 -->
+		<dependency>
+			<groupId>com.refactor</groupId>
+			<artifactId>refactor-payment-common</artifactId>
+			<version>1.1-SNAPSHOT</version>
+		</dependency>
+		<!-- mybatis mybatis spring start -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>${mybatis.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+			<version>${mybatis-spring.version}</version>
+		</dependency>
+		<!-- mybatis mybatis spring end -->
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper</artifactId>
+			<version>${pagehelper.version}</version>
+		</dependency>
+				
+	</dependencies>
+</project>

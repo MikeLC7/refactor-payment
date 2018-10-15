@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>com.refactor</groupId>
+    <artifactId>refactor-payment</artifactId>
+    <version>1.1-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>refactor-payment-common</artifactId>
+  <name>refactor-payment-common</name>
+
+
+  <dependencies>
+      <!--依赖通用项目-->
+      <dependency>
+        <groupId>com.refactor.mall</groupId>
+        <artifactId>refactor-mall-common</artifactId>
+        <version>${refactor-mall-common.version}</version>
+      </dependency>
+      <!-- dependencies xxpay module -->
+      <dependency>
+        <groupId>org.xxpay</groupId>
+        <artifactId>xxpay-common</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+      <dependency>
+          <groupId>org.xxpay</groupId>
+          <artifactId>xxpay-dal</artifactId>
+          <version>1.0.0</version>
+      </dependency>
+     <!-- <dependency>
+          <groupId>org.xxpay</groupId>
+          <artifactId>xxpay4spring-boot</artifactId>
+          <version>1.0.0</version>
+      </dependency>-->
+
+  </dependencies>
+
+</project>
